@@ -16,7 +16,7 @@ export const users = pgTable('users', {
 
   role: varchar('role', { length: 50 }).notNull().default('user'),
 
-  createdAt: timestamp('created_at').defaultNow().notNull(),
+  created_at: timestamp('created_at').defaultNow().notNull(),
 
-  updatedAt: timestamp('updated_at').defaultNow().notNull(),
+  updated_at: timestamp('updated_at').defaultNow().notNull(),
 });
