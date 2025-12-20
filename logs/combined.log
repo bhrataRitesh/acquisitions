@@ -135,3 +135,31 @@
 {"level":"error","message":"Error creating the user: Error: User already Exists","service":"acquisitions-api"}
 {"level":"error","message":"Signup error Error creating the user","service":"acquisitions-api","stack":"Error: Error creating the user\n    at createUser (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/services/auth.service.js:32:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/controllers/auth.controller.js:22:18)"}
 {"level":"info","message":"::1 - - [20/Dec/2025:11:09:10 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 517 \"-\" \"PostmanRuntime/7.45.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:15:59:44 +0000] \"GET /health HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:15:59:45 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:15:59:45 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:15:59:46 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:15:59:56 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:01:34 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-out","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:02:15 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-out","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:03:22 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-out","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:04:10 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-out","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:05:24 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:06:31 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:06:35 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:06:36 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:06:37 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:06:38 +0000] \"GET /health HTTP/1.1\" 200 73 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/health","service":"acquisitions-api","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:06:39 +0000] \"GET /health HTTP/1.1\" 403 88 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:16:07:52 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
