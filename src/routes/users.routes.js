@@ -1,6 +1,6 @@
 import { fetchAllUsers, fetchUserById, editUserById, removeUserById } from '#controllers/users.controller';
-import { authenticateToken, requiredRole } from '#middleware/auth.middleware'
-import express from 'express'
+import { authenticateToken, requiredRole } from '#middleware/auth.middleware';
+import express from 'express';
 
 const router = express.Router();
 
