@@ -50,3 +50,27 @@
 {"level":"error","message":"Login error Error getting user","service":"acquisitions-api","stack":"Error: Error getting user\n    at getUser (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/services/auth.service.js:42:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signin (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/controllers/auth.controller.js:63:18)"}
 {"level":"error","message":"Error creating the user: Error: User already Exists","service":"acquisitions-api"}
 {"level":"error","message":"Signup error Error creating the user","service":"acquisitions-api","stack":"Error: Error creating the user\n    at createUser (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/services/auth.service.js:32:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/controllers/auth.controller.js:22:18)"}
+{"level":"error","message":"ERROR getting users users is not defined","service":"acquisitions-api","stack":"ReferenceError: users is not defined\n    at getAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/services/users.service.js:9:21)\n    at fetchAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/controllers/users.controller.js:8:32)\n    at Layer.handleRequest (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/route.js:117:3)\n    at handle (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/layer.js:152:17)\n    at /Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:295:15\n    at processParams (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:582:12)\n    at next (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:291:5)"}
+{"level":"error","service":"acquisitions-api"}
+{"cause":{"name":"NeonDbError","sourceError":{}},"level":"error","message":"ERROR getting users Failed query: select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"\nparams: ","params":[],"query":"select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"","service":"acquisitions-api","stack":"Error: Failed query: select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"\nparams: \n    at NeonHttpPreparedQuery.queryWithCache (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/drizzle-orm/pg-core/session.js:41:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async NeonHttpPreparedQuery.execute (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/drizzle-orm/neon-http/session.js:45:20)\n    at async getAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/services/users.service.js:8:26)\n    at async fetchAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/controllers/users.controller.js:8:26)"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting users : Error: Failed query: select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"\nparams: ","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"Error preparing data: TypeError: Cannot set properties of undefined (setting 'name')","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","message":"Update user error : RangeError: Maximum call stack size exceeded","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}

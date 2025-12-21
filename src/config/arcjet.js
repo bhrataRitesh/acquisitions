@@ -9,7 +9,7 @@ const aj = arcjet({
     detectBot({
       mode: 'LIVE',
       allow: [
-        'CATEGORY:SEARCH_ENGINE', 
+        'CATEGORY:SEARCH_ENGINE',
         //"CATEGORY:MONITOR", // Uptime monitoring services
         'CATEGORY:PREVIEW', // Link previews e.g. Slack, Discord
       ],
@@ -17,7 +17,7 @@ const aj = arcjet({
     slidingWindow({
       mode: 'LIVE',
       interval: '2s',
-      max:5                
+      max: 5
     })
     // Create a token bucket rate limit. Other algorithms are supported.
     // tokenBucket({

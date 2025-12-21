@@ -164,3 +164,208 @@
 {"level":"info","message":"::1 - - [20/Dec/2025:16:06:39 +0000] \"GET /health HTTP/1.1\" 403 88 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [20/Dec/2025:16:07:52 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [20/Dec/2025:16:35:24 +0000] \"GET /health HTTP/1.1\" 200 71 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:47:55 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting users users is not defined","service":"acquisitions-api","stack":"ReferenceError: users is not defined\n    at getAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/services/users.service.js:9:21)\n    at fetchAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/controllers/users.controller.js:8:32)\n    at Layer.handleRequest (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/layer.js:152:17)\n    at next (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/route.js:157:13)\n    at Route.dispatch (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/route.js:117:3)\n    at handle (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:435:11)\n    at Layer.handleRequest (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/lib/layer.js:152:17)\n    at /Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:295:15\n    at processParams (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:582:12)\n    at next (/Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/router/index.js:291:5)"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:48:05 +0000] \"GET /api/users HTTP/1.1\" 500 1406 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"cause":{"name":"NeonDbError","sourceError":{}},"level":"error","message":"ERROR getting users Failed query: select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"\nparams: ","params":[],"query":"select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"","service":"acquisitions-api","stack":"Error: Failed query: select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"\nparams: \n    at NeonHttpPreparedQuery.queryWithCache (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/drizzle-orm/pg-core/session.js:41:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async NeonHttpPreparedQuery.execute (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/node_modules/drizzle-orm/neon-http/session.js:45:20)\n    at async getAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/services/users.service.js:8:26)\n    at async fetchAllUsers (file:///Users/ritesh/Desktop/Code/Tech/project/acquisitions/src/controllers/users.controller.js:8:26)"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:50:23 +0000] \"GET /api/users HTTP/1.1\" 500 522 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting users : Error: Failed query: select \"id\", \"name\", \"email\", \"role\", \"created_at\", \"updated_at\" from \"users\"\nparams: ","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:51:54 +0000] \"GET /api/users HTTP/1.1\" 500 522 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:54:01 +0000] \"GET /api/users HTTP/1.1\" 200 214 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:54:33 +0000] \"GET /api/users HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:54:34 +0000] \"GET /api/users HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:54:35 +0000] \"GET /api/users HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:54:36 +0000] \"GET /api/users HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:54:36 +0000] \"GET /api/users HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","path":"/api/users","service":"acquisitions-api","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"}
+{"level":"info","message":"::1 - - [20/Dec/2025:22:54:37 +0000] \"GET /api/users HTTP/1.1\" 403 88 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:15:14 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:15:21 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:17:26 +0000] \"GET / HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:21:47 +0000] \"GET / HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:21:49 +0000] \"GET / HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:24:26 +0000] \"GET / HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.51.0"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:26:04 +0000] \"GET / HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:26:47 +0000] \"GET / HTTP/1.1\" 200 24 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:27:03 +0000] \"GET /api/users/ HTTP/1.1\" 200 214 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:28:56 +0000] \"GET /api/users/3 HTTP/1.1\" 200 214 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:30:34 +0000] \"GET /api/users/3 HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:37:47 +0000] \"GET /api/users/3 HTTP/1.1\" 500 1400 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:38:48 +0000] \"GET /api/users/3 HTTP/1.1\" 200 41 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:39:04 +0000] \"GET /api/users/3 HTTP/1.1\" 500 1400 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:40:27 +0000] \"GET /api/users/3 HTTP/1.1\" 500 1400 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:40:43 +0000] \"GET /api/users/3 HTTP/1.1\" 500 1400 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"error","message":"ERROR getting user : ReferenceError: eq is not defined","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:40:52 +0000] \"GET /api/users/3 HTTP/1.1\" 500 1400 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:42:06 +0000] \"GET /api/users/3 HTTP/1.1\" 200 41 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:42:35 +0000] \"GET /api/users/3 HTTP/1.1\" 200 122 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:43:52 +0000] \"GET /api/users HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:43:58 +0000] \"GET /api/users/3 HTTP/1.1\" 200 122 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:49:29 +0000] \"GET /api/users HTTP/1.1\" 200 214 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:56:30 +0000] \"PUT /api/users/3 HTTP/1.1\" 500 1407 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:00:57:15 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 41 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:11:50 +0000] \"PUT /api/users/3 HTTP/1.1\" 500 549 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"error","message":"Error preparing data: TypeError: Cannot set properties of undefined (setting 'name')","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:13:55 +0000] \"PUT /api/users/3 HTTP/1.1\" 500 507 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:16:11 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 41 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:16:54 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 41 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:20:47 +0000] \"PUT /api/users/3 HTTP/1.1\" 500 405 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:21:04 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 41 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:21:28 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 41 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"error","message":"Update user error : RangeError: Maximum call stack size exceeded","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:28:04 +0000] \"PUT /api/users/3 HTTP/1.1\" 500 517 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:30:50 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 101 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:32:53 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 103 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:33:26 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 100 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:33:53 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 87 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:34:14 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 103 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:34:53 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 94 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"error","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:35:18 +0000] \"PUT /api/users/3 HTTP/1.1\" 500 429 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:35:40 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 94 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:36:12 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 94 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:37:00 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 86 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:38:17 +0000] \"PUT /api/users/3 HTTP/1.1\" 200 86 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:48:34 +0000] \"GET /api/users/3 HTTP/1.1\" 200 132 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:49:14 +0000] \"DELETE /api/users/3 HTTP/1.1\" 200 53 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:49:20 +0000] \"GET /api/users HTTP/1.1\" 200 63 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User ratohikumar@gmail.com created Successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: ratohikumar@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:49:41 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 120 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:49:51 +0000] \"GET /api/users HTTP/1.1\" 200 226 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Getting user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:49:59 +0000] \"GET /api/users/4 HTTP/1.1\" 200 132 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:50:15 +0000] \"PUT /api/users/3 HTTP/1.1\" 401 26 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Updating user....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:01:50:21 +0000] \"PUT /api/users/4 HTTP/1.1\" 200 80 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:00:01 +0000] \"GET /api/users HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Logged in successfully: ratohikumar@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:00:21 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 121 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:01:50 +0000] \"GET /api/users HTTP/1.1\" 500 1450 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:02:19 +0000] \"GET /api/users HTTP/1.1\" 500 1450 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:12:29 +0000] \"GET /api/users HTTP/1.1\" 500 1415 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:12:47 +0000] \"GET /api/users HTTP/1.1\" 200 220 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:13:03 +0000] \"GET /api/users HTTP/1.1\" 200 220 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:13:26 +0000] \"GET /api/users HTTP/1.1\" 200 220 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:14:28 +0000] \"GET /api/users HTTP/1.1\" 200 220 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:14:43 +0000] \"GET /api/users HTTP/1.1\" 200 220 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:14:48 +0000] \"GET /api/users HTTP/1.1\" 200 220 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:15:06 +0000] \"GET /api/users HTTP/1.1\" 200 220 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:15:55 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:16:20 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:16:35 +0000] \"GET /api/users HTTP/1.1\" 401 72 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User priyanka@gmail.com created Successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: priyanka@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:18:21 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 106 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Logged in successfully: priyanka@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:18:35 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 113 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: priyanka@gmail.com(user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:18:42 +0000] \"GET /api/users HTTP/1.1\" 200 370 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: priyanka@gmail.com(user)","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user priyanka@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:31:55 +0000] \"GET /api/users HTTP/1.1\" 403 61 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:32:13 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Logged in successfully: ratohikumar@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:32:27 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 121 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: ratohikumar@gmail.com(admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting users....","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:32:29 +0000] \"GET /api/users HTTP/1.1\" 200 370 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:32:38 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Logged in successfully: priyanka@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:32:47 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 113 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: priyanka@gmail.com(user)","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user priyanka@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:32:57 +0000] \"DELETE /api/users/4 HTTP/1.1\" 403 61 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: priyanka@gmail.com(user)","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user priyanka@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:33:10 +0000] \"DELETE /api/users/3 HTTP/1.1\" 403 61 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: priyanka@gmail.com(user)","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user priyanka@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Dec/2025:02:33:21 +0000] \"GET /api/users HTTP/1.1\" 403 61 \"-\" \"PostmanRuntime/7.51.0\"","service":"acquisitions-api"}
