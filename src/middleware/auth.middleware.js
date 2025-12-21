@@ -1,13 +1,13 @@
 import logger from '#config/logger';
 import { jwttoken } from '#utils/jwt';
 
-export const authenticateToken = (req,res,next) => {
+export const authenticateToken = (req, res, next) => {
   try {
     const token = req.cookies.token;
     if (!token) {
       return res.status(401).json({
         error: 'Authentication required',
-        message: 'No access token provided'
+        message: 'No access token provided',
       });
     }
 
@@ -20,36 +20,37 @@ export const authenticateToken = (req,res,next) => {
     if (e.message === 'Failed to authenticate token') {
       return res.status(500).json({
         error: 'Internal server error',
-        message: 'Error during authentication'
+        message: 'Error during authentication',
       });
     }
   }
 };
 
-export const requiredRole = (allowedRoles) => {
+export const requiredRole = allowedRoles => {
   return (req, res, next) => {
     try {
       if (!req.user) {
         return res.status(401).json({
           error: 'Authentication required',
-          message: 'User not authenticated'
+          message: 'User not authenticated',
         });
       }
-            
+
       if (!allowedRoles.includes(req.user.role)) {
-        logger.warn(`Access denied for user ${req.user.email} with role ${req.user.role}. Required: ${allowedRoles.join(', ')}`);
+        logger.warn(
+          `Access denied for user ${req.user.email} with role ${req.user.role}. Required: ${allowedRoles.join(', ')}`
+        );
         return res.status(403).json({
           error: 'Access Denied',
-          message: 'Insufficient Permission'
+          message: 'Insufficient Permission',
         });
       }
       next();
-            
     } catch (e) {
       logger.error(`Role verification error: ${e}`);
       return res.status(500).json({
         error: 'Internal server error',
-        message: 'Error during role verification'
+        message: 'Error during role verification',
       });
     }
   };

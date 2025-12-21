@@ -1,7 +1,6 @@
 import arcjet, { shield, detectBot, slidingWindow } from '@arcjet/node';
 // import { isSpoofedBot } from '@arcjet/inspect';
 
-
 const aj = arcjet({
   key: process.env.ARCJET_KEY,
   rules: [
@@ -17,8 +16,8 @@ const aj = arcjet({
     slidingWindow({
       mode: 'LIVE',
       interval: '2s',
-      max: 5
-    })
+      max: 5,
+    }),
     // Create a token bucket rate limit. Other algorithms are supported.
     // tokenBucket({
     //     mode: "LIVE",

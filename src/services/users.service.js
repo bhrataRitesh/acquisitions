@@ -4,7 +4,6 @@ import { users } from '#models/user.model';
 import { eq } from 'drizzle-orm';
 
 export const getAllUsers = async () => {
-
   try {
     const allUsers = await db
       .select({
@@ -13,8 +12,9 @@ export const getAllUsers = async () => {
         email: users.email,
         role: users.role,
         created_at: users.created_at,
-        updated_at: users.updated_at
-      }).from(users);
+        updated_at: users.updated_at,
+      })
+      .from(users);
     return allUsers;
   } catch (e) {
     logger.error(`ERROR getting users : ${e}`);
@@ -22,14 +22,18 @@ export const getAllUsers = async () => {
   }
 };
 
-export const getUserById = async (id) => {
+export const getUserById = async id => {
   try {
-    const [user]= await db.select({
-      id: users.id,
-      name: users.name,
-      email: users.email,
-      role: users.role
-    }).from(users).where(eq(users.id, id)).limit(1);
+    const [user] = await db
+      .select({
+        id: users.id,
+        name: users.name,
+        email: users.email,
+        role: users.role,
+      })
+      .from(users)
+      .where(eq(users.id, id))
+      .limit(1);
     return user;
   } catch (e) {
     logger.error(`ERROR getting user : ${e}`);
@@ -56,7 +60,7 @@ export const updateUserById = async (id, userData) => {
   }
 };
 
-export const deleteUserById = async (id) => {
+export const deleteUserById = async id => {
   try {
     const [deletedUser] = await db
       .delete(users)

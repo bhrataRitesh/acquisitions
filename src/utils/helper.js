@@ -1,9 +1,9 @@
 import bcrypt from 'bcrypt';
 import logger from '#config/logger';
 
-export const prepareData = (data) => {
+export const prepareData = data => {
   try {
-    const responseData={};
+    const responseData = {};
     if (data?.name) {
       responseData.name = data.name;
     }
@@ -23,12 +23,11 @@ export const prepareData = (data) => {
   }
 };
 
-export const hashPassword = async (password) => {
+export const hashPassword = async password => {
   try {
     return await bcrypt.hash(password, 10);
   } catch (e) {
     logger.error(`Error hashing the password: ${e}`);
     throw new Error('Error hashing');
-
   }
 };
